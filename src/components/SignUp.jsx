@@ -4,6 +4,7 @@ import UiLogin from "../ui/UiLogin";
 import LoadingWrapper from "../ui/LoadingWrapper";
 import { useNavigate, Link } from "react-router-dom";
 import Avatars from "../ui/avatars";
+import axios from "axios";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -22,14 +23,15 @@ const SignUp = () => {
 
   const [error, setError] = useState("");
   useEffect(() => {
-    fetch("http://localhost:3001/users")
-      .then((response) => response.json())
-      .then((data) => {
-        setUsers(data);
-      })
-      .catch((error) => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get("http://localhost:3001/users");
+        setUsers(response.data);
+      } catch (error) {
         console.error("Error fetching users", error);
-      });
+      }
+    };
+    fetchUsers();
   }, []);
 
   const handleChange = (e) => {
@@ -191,7 +193,9 @@ const SignUp = () => {
             </button>
             <div className="flex px-1 mt-2 justify-center">
               <p className="text-lg">Have an account?</p>
-              <Link to={"/login"} className="px-3 text-lg btn-link">Login</Link>
+              <Link to={"/login"} className="px-3 text-lg btn-link">
+                Login
+              </Link>
             </div>
           </form>
         </div>

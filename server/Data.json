@@ -43,39 +43,6 @@
       "gender": "",
       "age": "30",
       "pic": "https://avatar.iran.liara.run/public/38"
-    },
-    {
-      "id": "1735599362250",
-      "name": "test",
-      "username": "test",
-      "email": "test@com",
-      "phone": "22",
-      "website": "22",
-      "gender": "women",
-      "age": "48",
-      "pic": "https://avatar.iran.liara.run/public/74"
-    },
-    {
-      "id": "1735634686481",
-      "name": "ali",
-      "username": "ghfari",
-      "email": "new@new.com",
-      "phone": "12313",
-      "website": "sfss",
-      "gender": "men",
-      "age": "55",
-      "pic": "https://avatar.iran.liara.run/public/34"
-    },
-    {
-      "id": 1735659337713,
-      "name": "ali",
-      "username": "ghafarrr",
-      "email": "Ghafali10@gmail.com",
-      "phone": "1313",
-      "website": "lksjdf.com",
-      "gender": "men",
-      "age": "22",
-      "pic": "https://avatar.iran.liara.run/public/20"
     }
   ]
 }

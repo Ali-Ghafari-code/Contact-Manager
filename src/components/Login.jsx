@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import LoadingWrapper from "../ui/LoadingWrapper";
 import UiSign from "../ui/UiSign";
@@ -73,6 +73,12 @@ const Login = () => {
             >
               Login
             </button>
+            <div className="flex px-1 mt-2 justify-center">
+              <p className="text-lg">Create an account?</p>
+              <Link to={"/login"} className="px-3 text-lg btn-link">
+                Login
+              </Link>
+            </div>
           </form>
         </div>
       </div>
