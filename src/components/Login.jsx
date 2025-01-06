@@ -75,7 +75,7 @@ const Login = () => {
             </button>
             <div className="flex px-1 mt-2 justify-center">
               <p className="text-lg">Create an account?</p>
-              <Link to={"/login"} className="px-3 text-lg btn-link">
+              <Link to={"/"} className="px-3 text-lg btn-link">
                 Login
               </Link>
             </div>
